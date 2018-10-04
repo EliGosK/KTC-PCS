@@ -1,0 +1,4 @@
+Pending Itemssssssss....
+
+1. เวลาเปิด editor control จะเปิดตามตำแหน่งที่ mouse อยู่ ณ. ปัจจุบัน ไม่ได้เอาตาม active day, ความเป็นจริงแล้วควรเอาจาก active day
+2. เวลาเปิด editor จากการกดปุ่ม enter แล้วกดใหม่ เหมือน ๆ กับว่า editor control หายไปแล้วแต่ว่ายังแก้ไขข้อมูลได้อยู่

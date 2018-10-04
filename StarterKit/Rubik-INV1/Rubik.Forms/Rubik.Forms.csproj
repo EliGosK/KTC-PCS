@@ -1,0 +1,1458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D973AD57-BF72-493D-B56D-B732AA09D360}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Rubik.Forms</RootNamespace>
+    <AssemblyName>Rubik.Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Rubik.Forms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Rubik.Forms.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.OWC11">
+      <HintPath>..\..\StarterKit\StarterKit\Library\AxInterop.OWC11.dll</HintPath>
+    </Reference>
+    <Reference Include="CRVsPackageLib, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommLayer, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonControls, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CommonObjectModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Controllers, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.CubeDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.DataSetConversion, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.ObjectFactory, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.Prompting, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ReportDefModel, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.XmlSerialize, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.CalcEngine, Version=2.5.2025.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=2.5.2025.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=2.5.2015.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=2.5.2015.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Ink, Version=2.5.2001.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=2.5.2015.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread.Design, Version=2.5.2015.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.TextRenderer, Version=2.5.2001.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="Microsoft.Office.Interop.Owc11, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\StarterKit\StarterKit\Library\Microsoft.Office.Interop.Owc11.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MSDATASRC, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\StarterKit\StarterKit\Library\MSDATASRC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\ClassListController.cs" />
+    <Compile Include="Controller\InvoiceController.cs" />
+    <Compile Include="Controller\ReturnController.cs" />
+    <Compile Include="Controller\SalesSummaryController.cs" />
+    <Compile Include="Controller\CustomerOrderController.cs" />
+    <Compile Include="Controller\DeliveryController.cs" />
+    <Compile Include="Controller\ImportStockTakingController.cs" />
+    <Compile Include="Controller\MachineController.cs" />
+    <Compile Include="Controller\IssueByEntryController.cs" />
+    <Compile Include="Controller\LotMaintenanceController.cs" />
+    <Compile Include="Controller\MovePartController.cs" />
+    <Compile Include="Controller\MultiWorkResultController.cs" />
+    <Compile Include="Controller\NGInquiryController.cs" />
+    <Compile Include="Controller\PackingController.cs" />
+    <Compile Include="Controller\ProductionReportController.cs" />
+    <Compile Include="Controller\SalesUnitPriceController.cs" />
+    <Compile Include="Controller\SheetWidthController.cs" />
+    <Compile Include="Controller\SystemConfigController.cs" />
+    <Compile Include="Forms\1_Master\MAS090_ClassList\MAS090_ClassList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS090_ClassList\MAS090_ClassList.Designer.cs">
+      <DependentUpon>MAS090_ClassList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS010_DealingList\MAS010_DealingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS010_DealingList\MAS010_DealingList.Designer.cs">
+      <DependentUpon>MAS010_DealingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS020_DealingMaster\MAS020_DealingMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS020_DealingMaster\MAS020_DealingMaster.Designer.cs">
+      <DependentUpon>MAS020_DealingMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS030_ItemList\MAS030_ItemList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS030_ItemList\MAS030_ItemList.Designer.cs">
+      <DependentUpon>MAS030_ItemList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS040_ItemMaster\MAS041.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS040_ItemMaster\MAS041.Designer.cs">
+      <DependentUpon>MAS041.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS040_ItemMaster\MAS040_ItemMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS040_ItemMaster\MAS040_ItemMaster.Designer.cs">
+      <DependentUpon>MAS040_ItemMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS050_BOMSetup\BOMNode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS050_BOMSetup\BOMNodeUtility.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS050_BOMSetup\BOMNodeValidate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS050_BOMSetup\ExecuteScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS050_BOMSetup\MAS050_BOMSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS050_BOMSetup\MAS050_BOMSetup.Designer.cs">
+      <DependentUpon>MAS050_BOMSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS050_BOMSetup\MAS051_RegisterBOM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS050_BOMSetup\MAS051_RegisterBOM.Designer.cs">
+      <DependentUpon>MAS051_RegisterBOM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS050_BOMSetup\MAS052_ChangeItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS050_BOMSetup\MAS052_ChangeItem.Designer.cs">
+      <DependentUpon>MAS052_ChangeItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS060_Inventory Period Setup\MAS060 Inventory Period Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS060_Inventory Period Setup\MAS060 Inventory Period Setup.Designer.cs">
+      <DependentUpon>MAS060 Inventory Period Setup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS070_BOMList\MAS070_BOMList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS070_BOMList\MAS070_BOMList.Designer.cs">
+      <DependentUpon>MAS070_BOMList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS080_SystemConfiguration\MAS080_SystemConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS080_SystemConfiguration\MAS080_SystemConfiguration.Designer.cs">
+      <DependentUpon>MAS080_SystemConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS110_SalesUnitPriceList\MAS110_SalesUnitPriceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS110_SalesUnitPriceList\MAS110_SalesUnitPriceList.Designer.cs">
+      <DependentUpon>MAS110_SalesUnitPriceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS120_SalesUnitPriceMaster\MAS120_SalesUnitPriceMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS120_SalesUnitPriceMaster\MAS120_SalesUnitPriceMaster.Designer.cs">
+      <DependentUpon>MAS120_SalesUnitPriceMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS130_MachineList\MAS130_MachineList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS130_MachineList\MAS130_MachineList.Designer.cs">
+      <DependentUpon>MAS130_MachineList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS140_MachineMaster\MAS140_MachineMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\1_Master\MAS140_MachineMaster\MAS140_MachineMaster.Designer.cs">
+      <DependentUpon>MAS140_MachineMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN010 Receiving List\TRN010 Receiving List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN010 Receiving List\TRN010 Receiving List.Designer.cs">
+      <DependentUpon>TRN010 Receiving List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN020 Receiving Entry\TRN020 Receiving Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN020 Receiving Entry\TRN020 Receiving Entry.designer.cs">
+      <DependentUpon>TRN020 Receiving Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN030_TransferList\TRN030_TransferList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN030_TransferList\TRN030_TransferList.Designer.cs">
+      <DependentUpon>TRN030_TransferList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN050 Issue by Order List\TRN050 Issue by Order List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN050 Issue by Order List\TRN050 Issue by Order List.Designer.cs">
+      <DependentUpon>TRN050 Issue by Order List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN060 Issue By Order Entry\TRN060 Issue By Order Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN060 Issue By Order Entry\TRN060 Issue By Order Entry.Designer.cs">
+      <DependentUpon>TRN060 Issue By Order Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN070 Work Result List\TRN070 Work Result List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN070 Work Result List\TRN070 Work Result List.Designer.cs">
+      <DependentUpon>TRN070 Work Result List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN080 Work Result Entry\TRN080 Work Result Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN080 Work Result Entry\TRN080 Work Result Entry.Designer.cs">
+      <DependentUpon>TRN080 Work Result Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN090_DeliveryList\TRN090_DeliveryList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN090_DeliveryList\TRN090_DeliveryList.Designer.cs">
+      <DependentUpon>TRN090_DeliveryList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN100_DeliveryEntry\TRN101_LotMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN100_DeliveryEntry\TRN101_LotMaintenance.Designer.cs">
+      <DependentUpon>TRN101_LotMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN100_DeliveryEntry\TRN100_DeliveryEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN100_DeliveryEntry\TRN100_DeliveryEntry.Designer.cs">
+      <DependentUpon>TRN100_DeliveryEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN100_DeliveryEntry\TRN102_OrderMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN100_DeliveryEntry\TRN102_OrderMaintenance.Designer.cs">
+      <DependentUpon>TRN102_OrderMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN100_DeliveryEntry\TRN103_FGSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN100_DeliveryEntry\TRN103_FGSelection.Designer.cs">
+      <DependentUpon>TRN103_FGSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN110 Adjustment List\TRN110 Adjustment List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN110 Adjustment List\TRN110 Adjustment List.Designer.cs">
+      <DependentUpon>TRN110 Adjustment List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN120 Adjustment Entry\TRN120 Adjustment Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN120 Adjustment Entry\TRN120 Adjustment Entry.Designer.cs">
+      <DependentUpon>TRN120 Adjustment Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN130 Issue Consumption List\TRN130 Issue Consumption List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN130 Issue Consumption List\TRN130 Issue Consumption List.Designer.cs">
+      <DependentUpon>TRN130 Issue Consumption List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN140 Issue Consumption\TRN140 Issue Consumption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN140 Issue Consumption\TRN140 Issue Consumption.Designer.cs">
+      <DependentUpon>TRN140 Issue Consumption.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN150 NG Inquiry\TRN150_NGInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN150 NG Inquiry\TRN150_NGInquiry.Designer.cs">
+      <DependentUpon>TRN150_NGInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN160 Multi Work Result Entry\TRN160_MultiWorkResultEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN160 Multi Work Result Entry\TRN160_MultiWorkResultEntry.Designer.cs">
+      <DependentUpon>TRN160_MultiWorkResultEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN170_TransferEntry\TRN170_IssueByItemEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN170_TransferEntry\TRN170_IssueByItemEntry.Designer.cs">
+      <DependentUpon>TRN170_IssueByItemEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN170_TransferEntry\TRN171_LotMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN170_TransferEntry\TRN171_LotMaintenance.Designer.cs">
+      <DependentUpon>TRN171_LotMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN180_CustomerOrderList\TRN180_CustomerOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN180_CustomerOrderList\TRN180_CustomerOrderList.Designer.cs">
+      <DependentUpon>TRN180_CustomerOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN190_CustomerOrderEntry\TRN190_CustomerOrderEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN190_CustomerOrderEntry\TRN190_CustomerOrderEntry.Designer.cs">
+      <DependentUpon>TRN190_CustomerOrderEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN200_WorkResultList\TRN200_WorkResultList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN200_WorkResultList\TRN200_WorkResultList.Designer.cs">
+      <DependentUpon>TRN200_WorkResultList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN210_WorkResultEntry\TRN210_WorkResultEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN210_WorkResultEntry\TRN210_WorkResultEntry.Designer.cs">
+      <DependentUpon>TRN210_WorkResultEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN260_ReturnProductList\TRN260_ReturnProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN260_ReturnProductList\TRN260_ReturnProductList.Designer.cs">
+      <DependentUpon>TRN260_ReturnProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN270_ReturnProductEntry\TRN270_ReturnProductEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN270_ReturnProductEntry\TRN270_ReturnProductEntry.Designer.cs">
+      <DependentUpon>TRN270_ReturnProductEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN270_ReturnProductEntry\TRN271_DeliveryOrderSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN270_ReturnProductEntry\TRN271_DeliveryOrderSelection.Designer.cs">
+      <DependentUpon>TRN271_DeliveryOrderSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN290_MovePartList\TRN290_MovePartList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN290_MovePartList\TRN290_MovePartList.Designer.cs">
+      <DependentUpon>TRN290_MovePartList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN300_MovePartEntry\TRN300_MovePartEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN300_MovePartEntry\TRN300_MovePartEntry.Designer.cs">
+      <DependentUpon>TRN300_MovePartEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN310_PackingList\TRN310_PackingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN310_PackingList\TRN310_PackingList.Designer.cs">
+      <DependentUpon>TRN310_PackingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN320_PackingEntry\TRN320_PackingEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN320_PackingEntry\TRN320_PackingEntry.Designer.cs">
+      <DependentUpon>TRN320_PackingEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN330_UnpackEntry\TRN330_UnpackEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN330_UnpackEntry\TRN330_UnpackEntry.Designer.cs">
+      <DependentUpon>TRN330_UnpackEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN340_InvoiceList\TRN340_InvoiceList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN340_InvoiceList\TRN340_InvoiceList.Designer.cs">
+      <DependentUpon>TRN340_InvoiceList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN350_InvoiceEntry\TRN351_DeliveryOrderSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN350_InvoiceEntry\TRN351_DeliveryOrderSelection.Designer.cs">
+      <DependentUpon>TRN351_DeliveryOrderSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN350_InvoiceEntry\TRN350_InvoiceEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN350_InvoiceEntry\TRN350_InvoiceEntry.Designer.cs">
+      <DependentUpon>TRN350_InvoiceEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV060_ProductionSummaryByItem\INV060_ProductionSummaryByItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV060_ProductionSummaryByItem\INV060_ProductionSummaryByItem.Designer.cs">
+      <DependentUpon>INV060_ProductionSummaryByItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV070_InventorySummary\INV070_InventorySummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV070_InventorySummary\INV070_InventorySummary.Designer.cs">
+      <DependentUpon>INV070_InventorySummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV010_InventoryOnHandInquiry\INV010_InventoryOnHandInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV010_InventoryOnHandInquiry\INV010_InventoryOnHandInquiry.Designer.cs">
+      <DependentUpon>INV010_InventoryOnHandInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV020_InventoryMovementInquiry\INV020_InventoryMovementInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV020_InventoryMovementInquiry\INV020_InventoryMovementInquiry.Designer.cs">
+      <DependentUpon>INV020_InventoryMovementInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN040 Issue By Item\TRN040 Issue By Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\2_Transaction\TRN040 Issue By Item\TRN040 Issue By Item.Designer.cs">
+      <DependentUpon>TRN040 Issue By Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV030 TAG Card Printing\INV030 TAG Card Printing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV030 TAG Card Printing\INV030 TAG Card Printing.Designer.cs">
+      <DependentUpon>INV030 TAG Card Printing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV030 TAG Card Printing\INV031.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV030 TAG Card Printing\INV031.Designer.cs">
+      <DependentUpon>INV031.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV030 TAG Card Printing\TAGCardSchema.cs">
+      <DependentUpon>TAGCardSchema.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV030 TAG Card Printing\TAGCardSchema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TAGCardSchema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV030 TAG Card Printing\TAG_Card_FG.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TAG_Card_FG.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV030 TAG Card Printing\TAG_Card_RM.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TAG_Card_RM.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV030 TAG Card Printing\TAG_Card_WIP.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TAG_Card_WIP.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV040 Inventory Period Closing Process\INV040 Inventory Period Closing Process.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV040 Inventory Period Closing Process\INV040 Inventory Period Closing Process.Designer.cs">
+      <DependentUpon>INV040 Inventory Period Closing Process.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV050 Negative Lot Clearing Process\INV050 Negative Lot Clearing Process.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV050 Negative Lot Clearing Process\INV050 Negative Lot Clearing Process.Designer.cs">
+      <DependentUpon>INV050 Negative Lot Clearing Process.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV090_ProductionSummaryByMachine\INV090_ProductionSummaryByMachine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\3_Inventory\INV090_ProductionSummaryByMachine\INV090_ProductionSummaryByMachine.Designer.cs">
+      <DependentUpon>INV090_ProductionSummaryByMachine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\4_StockTaking\STK010_StockTakingPrepareProcess\STK010_StockTakingPrepareProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\4_StockTaking\STK010_StockTakingPrepareProcess\STK010_StockTakingPrepareProcess.designer.cs">
+      <DependentUpon>STK010_StockTakingPrepareProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\4_StockTaking\STK020_PrintStockCheckingList\STK020_PrintStockCheckingList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\4_StockTaking\STK020_PrintStockCheckingList\STK020_PrintStockCheckingList.designer.cs">
+      <DependentUpon>STK020_PrintStockCheckingList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\4_StockTaking\STK030_StockTakingEntry\STK030_StockTakingEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\4_StockTaking\STK030_StockTakingEntry\STK030_StockTakingEntry.designer.cs">
+      <DependentUpon>STK030_StockTakingEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\4_StockTaking\STK040_StockTakingUpdateProcess\STK040_StockTakingUpdateProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\4_StockTaking\STK040_StockTakingUpdateProcess\STK040_StockTakingUpdateProcess.designer.cs">
+      <DependentUpon>STK040_StockTakingUpdateProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\4_StockTaking\STK050_StockTakingPackEntry\STK050_StockTakingPackEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\4_StockTaking\STK050_StockTakingPackEntry\STK050_StockTakingPackEntry.Designer.cs">
+      <DependentUpon>STK050_StockTakingPackEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\4_StockTaking\STK060_ImportStockTaking\STK060_ImportStockTaking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\4_StockTaking\STK060_ImportStockTaking\STK060_ImportStockTaking.designer.cs">
+      <DependentUpon>STK060_ImportStockTaking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\5_Reports\RPT010_PREVIEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\5_Reports\RPT010_PREVIEW.Designer.cs">
+      <DependentUpon>RPT010_PREVIEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\5_Reports\RPT010 Injection Material Balance Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\5_Reports\RPT010 Inventory Period Setup.Designer.cs">
+      <DependentUpon>RPT010 Injection Material Balance Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\6_Maintenance\SMN020_LogInquiry\SMN020_LogInquiry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\6_Maintenance\SMN020_LogInquiry\SMN020_LogInquiry.Designer.cs">
+      <DependentUpon>SMN020_LogInquiry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\7_MRP\ORD010_DemandOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\7_MRP\ORD010_DemandOrderList.Designer.cs">
+      <DependentUpon>ORD010_DemandOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\7_MRP\MRP040_GeneratePO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\7_MRP\MRP020_MRPList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\7_MRP\MRP020_MRPList.Designer.cs">
+      <DependentUpon>MRP020_MRPList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\7_MRP\MRP030_MRPMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\7_MRP\MRP011_SourceOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\7_MRP\MRP011_SourceOrder.Designer.cs">
+      <DependentUpon>MRP011_SourceOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\7_MRP\MRP010_MRPRunningScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\7_MRP\MRP010_MRPRunningScreen.Designer.cs">
+      <DependentUpon>MRP010_MRPRunningScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\7_MRP\MAS100_WorkingCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\7_MRP\MAS100_WorkingCalendar.Designer.cs">
+      <DependentUpon>MAS100_WorkingCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\7_MRP\ORD020_DemandOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\7_MRP\ORD020_DemandOrder.Designer.cs">
+      <DependentUpon>ORD020_DemandOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\7_MRP\PUR010_PurchaseOrderList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\7_MRP\PUR010_PurchaseOrderList.Designer.cs">
+      <DependentUpon>PUR010_PurchaseOrderList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\7_MRP\PUR020_PurchaseOrderEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\7_MRP\PUR020_PurchaseOrderEntry.Designer.cs">
+      <DependentUpon>PUR020_PurchaseOrderEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\8_SummaryData\SUM010_SalesSummary\SUM010_SalesSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\8_SummaryData\SUM010_SalesSummary\SUM010_SalesSummary.Designer.cs">
+      <DependentUpon>SUM010_SalesSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\8_SummaryData\SUM020_SalesSummary\SUM020_SalesSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\8_SummaryData\SUM020_SalesSummary\SUM020_SalesSummary.Designer.cs">
+      <DependentUpon>SUM020_SalesSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\98_QueryLunch\QRS010_QueryLunch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\98_QueryLunch\QRS010_QueryLunch.Designer.cs">
+      <DependentUpon>QRS010_QueryLunch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FindDialog\LocationFindDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindDialog\LocationFindDialog.Designer.cs">
+      <DependentUpon>LocationFindDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FindDialog\CustomerFindDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindDialog\CustomerFindDialog.Designer.cs">
+      <DependentUpon>CustomerFindDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSet\STR040_StockTakingTagSummary.cs">
+      <DependentUpon>STR040_StockTakingTagSummary.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\DataSet\STR040_StockTakingTagSummary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STR040_StockTakingTagSummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report\RPT010_RPT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT010_RPT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\5_Reports\RPT010Schema.cs">
+      <DependentUpon>RPT010Schema.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Forms\5_Reports\RPT010Schema.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPT010Schema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\6_Maintenance\SMN010_TransactionLogView\SMN010_TransactionLogView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\6_Maintenance\SMN010_TransactionLogView\SMN010_TransactionLogView.Designer.cs">
+      <DependentUpon>SMN010_TransactionLogView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FindDialog\DynamicFindDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindDialog\DynamicFindDialog.designer.cs">
+      <DependentUpon>DynamicFindDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FindDialog\ItemFindDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindDialog\ItemFindDialog.Designer.cs">
+      <DependentUpon>ItemFindDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FindDialog\LotNoFindDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindDialog\LotNoFindDialog.Designer.cs">
+      <DependentUpon>LotNoFindDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\AdjustmentEntryController.cs" />
+    <Compile Include="Controller\AdjustmentListController.cs" />
+    <Compile Include="Controller\BOMSetupController.cs" />
+    <Compile Include="Controller\InjectionMaterialBalanceReportController.cs" />
+    <Compile Include="Controller\InventoryIssueListController.cs" />
+    <Compile Include="Controller\InventoryMovementInqController.cs" />
+    <Compile Include="Controller\InventoryOnhandController.cs" />
+    <Compile Include="Controller\InventoryPeriodController.cs" />
+    <Compile Include="Controller\InvTranLogController.cs" />
+    <Compile Include="Controller\IssueByItemController.cs" />
+    <Compile Include="Controller\IssueByOrderController.cs" />
+    <Compile Include="Controller\IssueConsumptionController.cs" />
+    <Compile Include="Controller\ItemController.cs" />
+    <Compile Include="Controller\DealingController.cs" />
+    <Compile Include="Controller\ReceivingEntryController.cs" />
+    <Compile Include="Controller\ReceivingListController.cs" />
+    <Compile Include="Controller\ShipmentEntryController.cs" />
+    <Compile Include="Controller\ShipmentListController.cs" />
+    <Compile Include="Controller\WorkResultController.cs" />
+    <Compile Include="Reports\DataSet\STR010_StockCheckingList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STR010_StockCheckingList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DataSet\STR020_StockCountingResult.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STR020_StockCountingResult.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Forms\RPT999_PreviewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\Forms\RPT999_PreviewReport.designer.cs">
+      <DependentUpon>RPT999_PreviewReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\Report\STR010_StockCheckingList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STR010_StockCheckingList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Report\STR020_StockCountingResult.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STR020_StockCountingResult.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Report\STR040_StockTakingTagSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STR040_StockTakingTagSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\Report\STR041_StockTakingTagSubReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>STR041_StockTakingTagSubReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDataModel\AdjustmentEntryUIDM.cs" />
+    <Compile Include="UIDataModel\AdjustmentListUIDM.cs" />
+    <Compile Include="UIDataModel\BOMRegisterUIDM.cs" />
+    <Compile Include="UIDataModel\ClassListUIDM.cs" />
+    <Compile Include="UIDataModel\InvoiceEntryUIDM.cs" />
+    <Compile Include="UIDataModel\UnPackingEntryUIDM.cs" />
+    <Compile Include="UIDataModel\CustomerOrderEntryUIDM.cs" />
+    <Compile Include="UIDataModel\LotMaintenanceUIDM.cs" />
+    <Compile Include="UIDataModel\MachineUIDM.cs" />
+    <Compile Include="UIDataModel\MovePartUIDM.cs" />
+    <Compile Include="UIDataModel\MultiWorkResultEntryUIDM.cs" />
+    <Compile Include="UIDataModel\InventoryMovementInqUIDM.cs" />
+    <Compile Include="UIDataModel\IssueByItemUIDM.cs" />
+    <Compile Include="UIDataModel\IssueByOrderUIDM.cs" />
+    <Compile Include="UIDataModel\ItemUIDM.cs" />
+    <Compile Include="UIDataModel\LocationUIDM.cs" />
+    <Compile Include="UIDataModel\PackingEntryUIDM.cs" />
+    <Compile Include="UIDataModel\PackingListUIDM.cs" />
+    <Compile Include="UIDataModel\ProductionReportEntryUIDM.cs" />
+    <Compile Include="UIDataModel\ReceivingEntryUIDM.cs" />
+    <Compile Include="UIDataModel\ReturnEntryUIDM.cs" />
+    <Compile Include="UIDataModel\SalesUnitPriceUIDM.cs" />
+    <Compile Include="UIDataModel\ShipmentEntryUIDM.cs" />
+    <Compile Include="UIDataModel\SystemConfigurationUIDM.cs" />
+    <Compile Include="UIDataModel\WorkResultEntryUIDM.cs" />
+    <Compile Include="UserControl\ItemTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControl\LocationTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CR.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\1_Master\MAS090_ClassList\MAS090_ClassList.resx">
+      <DependentUpon>MAS090_ClassList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS010_DealingList\MAS010_DealingList.resx">
+      <DependentUpon>MAS010_DealingList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS020_DealingMaster\MAS020_DealingMaster.resx">
+      <DependentUpon>MAS020_DealingMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS030_ItemList\MAS030_ItemList.resx">
+      <DependentUpon>MAS030_ItemList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS040_ItemMaster\MAS041.resx">
+      <DependentUpon>MAS041.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS040_ItemMaster\MAS040_ItemMaster.resx">
+      <DependentUpon>MAS040_ItemMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS050_BOMSetup\MAS050_BOMSetup.resx">
+      <DependentUpon>MAS050_BOMSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS050_BOMSetup\MAS051_RegisterBOM.resx">
+      <DependentUpon>MAS051_RegisterBOM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS050_BOMSetup\MAS052_ChangeItem.resx">
+      <DependentUpon>MAS052_ChangeItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS060_Inventory Period Setup\MAS060 Inventory Period Setup.resx">
+      <DependentUpon>MAS060 Inventory Period Setup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS070_BOMList\MAS070_BOMList.resx">
+      <DependentUpon>MAS070_BOMList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS080_SystemConfiguration\MAS080_SystemConfiguration.resx">
+      <DependentUpon>MAS080_SystemConfiguration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS110_SalesUnitPriceList\MAS110_SalesUnitPriceList.resx">
+      <DependentUpon>MAS110_SalesUnitPriceList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS120_SalesUnitPriceMaster\MAS120_SalesUnitPriceMaster.resx">
+      <DependentUpon>MAS120_SalesUnitPriceMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS130_MachineList\MAS130_MachineList.resx">
+      <DependentUpon>MAS130_MachineList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\1_Master\MAS140_MachineMaster\MAS140_MachineMaster.resx">
+      <DependentUpon>MAS140_MachineMaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN010 Receiving List\TRN010 Receiving List.resx">
+      <DependentUpon>TRN010 Receiving List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN020 Receiving Entry\TRN020 Receiving Entry.resx">
+      <DependentUpon>TRN020 Receiving Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN030_TransferList\TRN030_TransferList.resx">
+      <DependentUpon>TRN030_TransferList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN050 Issue by Order List\TRN050 Issue by Order List.resx">
+      <DependentUpon>TRN050 Issue by Order List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN060 Issue By Order Entry\TRN060 Issue By Order Entry.resx">
+      <DependentUpon>TRN060 Issue By Order Entry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN070 Work Result List\TRN070 Work Result List.resx">
+      <DependentUpon>TRN070 Work Result List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN080 Work Result Entry\TRN080 Work Result Entry.resx">
+      <DependentUpon>TRN080 Work Result Entry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN090_DeliveryList\TRN090_DeliveryList.resx">
+      <DependentUpon>TRN090_DeliveryList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN100_DeliveryEntry\TRN101_LotMaintenance.resx">
+      <DependentUpon>TRN101_LotMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN100_DeliveryEntry\TRN100_DeliveryEntry.resx">
+      <DependentUpon>TRN100_DeliveryEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN100_DeliveryEntry\TRN102_OrderMaintenance.resx">
+      <DependentUpon>TRN102_OrderMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN100_DeliveryEntry\TRN103_FGSelection.resx">
+      <DependentUpon>TRN103_FGSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN110 Adjustment List\TRN110 Adjustment List.resx">
+      <DependentUpon>TRN110 Adjustment List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN120 Adjustment Entry\TRN120 Adjustment Entry.resx">
+      <DependentUpon>TRN120 Adjustment Entry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN130 Issue Consumption List\TRN130 Issue Consumption List.resx">
+      <DependentUpon>TRN130 Issue Consumption List.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN140 Issue Consumption\TRN140 Issue Consumption.resx">
+      <DependentUpon>TRN140 Issue Consumption.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN150 NG Inquiry\TRN150_NGInquiry.resx">
+      <DependentUpon>TRN150_NGInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN160 Multi Work Result Entry\TRN160_MultiWorkResultEntry.resx">
+      <DependentUpon>TRN160_MultiWorkResultEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN170_TransferEntry\TRN170_IssueByItemEntry.resx">
+      <DependentUpon>TRN170_IssueByItemEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN170_TransferEntry\TRN171_LotMaintenance.resx">
+      <DependentUpon>TRN171_LotMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN180_CustomerOrderList\TRN180_CustomerOrderList.resx">
+      <DependentUpon>TRN180_CustomerOrderList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN190_CustomerOrderEntry\TRN190_CustomerOrderEntry.resx">
+      <DependentUpon>TRN190_CustomerOrderEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN200_WorkResultList\TRN200_WorkResultList.resx">
+      <DependentUpon>TRN200_WorkResultList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN210_WorkResultEntry\TRN210_WorkResultEntry.resx">
+      <DependentUpon>TRN210_WorkResultEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN260_ReturnProductList\TRN260_ReturnProductList.resx">
+      <DependentUpon>TRN260_ReturnProductList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN270_ReturnProductEntry\TRN270_ReturnProductEntry.resx">
+      <DependentUpon>TRN270_ReturnProductEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN270_ReturnProductEntry\TRN271_DeliveryOrderSelection.resx">
+      <DependentUpon>TRN271_DeliveryOrderSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN290_MovePartList\TRN290_MovePartList.resx">
+      <DependentUpon>TRN290_MovePartList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN300_MovePartEntry\TRN300_MovePartEntry.resx">
+      <DependentUpon>TRN300_MovePartEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN310_PackingList\TRN310_PackingList.resx">
+      <DependentUpon>TRN310_PackingList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN320_PackingEntry\TRN320_PackingEntry.resx">
+      <DependentUpon>TRN320_PackingEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN330_UnpackEntry\TRN330_UnpackEntry.resx">
+      <DependentUpon>TRN330_UnpackEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN340_InvoiceList\TRN340_InvoiceList.resx">
+      <DependentUpon>TRN340_InvoiceList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN350_InvoiceEntry\TRN351_DeliveryOrderSelection.resx">
+      <DependentUpon>TRN351_DeliveryOrderSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN350_InvoiceEntry\TRN350_InvoiceEntry.resx">
+      <DependentUpon>TRN350_InvoiceEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\3_Inventory\INV060_ProductionSummaryByItem\INV060_ProductionSummaryByItem.resx">
+      <DependentUpon>INV060_ProductionSummaryByItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\3_Inventory\INV070_InventorySummary\INV070_InventorySummary.resx">
+      <DependentUpon>INV070_InventorySummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\3_Inventory\INV010_InventoryOnHandInquiry\INV010_InventoryOnHandInquiry.resx">
+      <DependentUpon>INV010_InventoryOnHandInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\3_Inventory\INV020_InventoryMovementInquiry\INV020_InventoryMovementInquiry.resx">
+      <DependentUpon>INV020_InventoryMovementInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\2_Transaction\TRN040 Issue By Item\TRN040 Issue By Item.resx">
+      <DependentUpon>TRN040 Issue By Item.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\3_Inventory\INV030 TAG Card Printing\INV030 TAG Card Printing.resx">
+      <DependentUpon>INV030 TAG Card Printing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\3_Inventory\INV030 TAG Card Printing\INV031.resx">
+      <DependentUpon>INV031.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\3_Inventory\INV030 TAG Card Printing\TAG_Card_FG.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TAG_Card_FG.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\3_Inventory\INV030 TAG Card Printing\TAG_Card_RM.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TAG_Card_RM.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\3_Inventory\INV030 TAG Card Printing\TAG_Card_WIP.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TAG_Card_WIP.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\3_Inventory\INV040 Inventory Period Closing Process\INV040 Inventory Period Closing Process.resx">
+      <DependentUpon>INV040 Inventory Period Closing Process.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\3_Inventory\INV050 Negative Lot Clearing Process\INV050 Negative Lot Clearing Process.resx">
+      <DependentUpon>INV050 Negative Lot Clearing Process.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\3_Inventory\INV090_ProductionSummaryByMachine\INV090_ProductionSummaryByMachine.resx">
+      <DependentUpon>INV090_ProductionSummaryByMachine.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\4_StockTaking\STK010_StockTakingPrepareProcess\STK010_StockTakingPrepareProcess.resx">
+      <DependentUpon>STK010_StockTakingPrepareProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\4_StockTaking\STK020_PrintStockCheckingList\STK020_PrintStockCheckingList.resx">
+      <DependentUpon>STK020_PrintStockCheckingList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\4_StockTaking\STK030_StockTakingEntry\STK030_StockTakingEntry.resx">
+      <DependentUpon>STK030_StockTakingEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\4_StockTaking\STK040_StockTakingUpdateProcess\STK040_StockTakingUpdateProcess.resx">
+      <DependentUpon>STK040_StockTakingUpdateProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\4_StockTaking\STK050_StockTakingPackEntry\STK050_StockTakingPackEntry.resx">
+      <DependentUpon>STK050_StockTakingPackEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\4_StockTaking\STK060_ImportStockTaking\STK060_ImportStockTaking.resx">
+      <DependentUpon>STK060_ImportStockTaking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\5_Reports\RPT010_PREVIEW.resx">
+      <DependentUpon>RPT010_PREVIEW.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\5_Reports\RPT010 Injection Material Balance Report.resx">
+      <DependentUpon>RPT010 Injection Material Balance Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\6_Maintenance\SMN020_LogInquiry\SMN020_LogInquiry.resx">
+      <DependentUpon>SMN020_LogInquiry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\7_MRP\ORD010_DemandOrderList.resx">
+      <DependentUpon>ORD010_DemandOrderList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\7_MRP\MRP040_GeneratePO.resx">
+      <DependentUpon>MRP040_GeneratePO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\7_MRP\MRP020_MRPList.resx">
+      <DependentUpon>MRP020_MRPList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\7_MRP\MRP011_SourceOrder.resx">
+      <DependentUpon>MRP011_SourceOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\7_MRP\MRP010_MRPRunningScreen.resx">
+      <DependentUpon>MRP010_MRPRunningScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\7_MRP\MAS100_WorkingCalendar.resx">
+      <DependentUpon>MAS100_WorkingCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\7_MRP\ORD020_DemandOrder.resx">
+      <DependentUpon>ORD020_DemandOrder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\7_MRP\MRP030_MRPMaintenance.resx">
+      <DependentUpon>MRP030_MRPMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\7_MRP\PUR010_PurchaseOrderList.resx">
+      <DependentUpon>PUR010_PurchaseOrderList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\7_MRP\PUR020_PurchaseOrderEntry.resx">
+      <DependentUpon>PUR020_PurchaseOrderEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\8_SummaryData\SUM010_SalesSummary\SUM010_SalesSummary.resx">
+      <DependentUpon>SUM010_SalesSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\8_SummaryData\SUM020_SalesSummary\SUM020_SalesSummary.resx">
+      <DependentUpon>SUM020_SalesSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\98_QueryLunch\QRS010_QueryLunch.resx">
+      <DependentUpon>QRS010_QueryLunch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindDialog\LocationFindDialog.resx">
+      <DependentUpon>LocationFindDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindDialog\CustomerFindDialog.resx">
+      <DependentUpon>CustomerFindDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report\RPT010_RPT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPT010_RPT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\6_Maintenance\SMN010_TransactionLogView\SMN010_TransactionLogView.resx">
+      <DependentUpon>SMN010_TransactionLogView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindDialog\DynamicFindDialog.resx">
+      <DependentUpon>DynamicFindDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindDialog\ItemFindDialog.resx">
+      <DependentUpon>ItemFindDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindDialog\LotNoFindDialog.resx">
+      <DependentUpon>LotNoFindDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Forms\RPT999_PreviewReport.resx">
+      <DependentUpon>RPT999_PreviewReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report\STR010_StockCheckingList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>STR010_StockCheckingList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report\STR020_StockCountingResult.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>STR020_StockCountingResult.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report\STR040_StockTakingTagSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>STR040_StockTakingTagSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report\STR041_StockTakingTagSubReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>STR041_StockTakingTagSubReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\LocationTextBox.resx">
+      <DependentUpon>LocationTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\StarterKit\CommonLib\CommonLib.csproj">
+      <Project>{D160F5CE-2341-444F-B82E-B429120B6738}</Project>
+      <Name>CommonLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StarterKit\EVOFramework.Windows.Form\EVOFramework.Windows.Forms.csproj">
+      <Project>{61AA9F8C-A5B2-4646-AB98-7ED46981D68E}</Project>
+      <Name>EVOFramework.Windows.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StarterKit\EVOFramework\EVOFramework.csproj">
+      <Project>{C6BDCF3A-CBCF-49F0-BA6B-1F5639A959CF}</Project>
+      <Name>EVOFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StarterKit\SystemMaintenance\SystemMaintenance.csproj">
+      <Project>{2FF7FCFC-8EA2-4A7F-AAD6-11E27B24E6CE}</Project>
+      <Name>SystemMaintenance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rubik.Business\Rubik.Business.csproj">
+      <Project>{DD08D496-1730-4B4F-844C-74757C3B7541}</Project>
+      <Name>Rubik.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rubik.Data\Rubik.Data.csproj">
+      <Project>{07DE6028-4024-4896-BF4F-0B2A649CAF10}</Project>
+      <Name>Rubik.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Reports\DataSet\STR040_StockTakingTagSummary.xsc">
+      <DependentUpon>STR040_StockTakingTagSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSet\STR040_StockTakingTagSummary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>STR040_StockTakingTagSummary.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\DataSet\STR040_StockTakingTagSummary.xss">
+      <DependentUpon>STR040_StockTakingTagSummary.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Report\STR030_StockTaking.xls" />
+    <None Include="Reports\Report\STK060_ImportStockTakingTemplate.xls" />
+    <None Include="Reports\Report\TRN090_Invoice_Template.xls" />
+    <None Include="Reports\Report\IVR010_InventorySheet.xls" />
+    <None Include="Reports\Report\STK060_ImportStockTakingTemplate %28Before remove packing%29.xls" />
+    <None Include="Reports\Report\STR020_StockCountingResultForExport.xls" />
+    <None Include="Reports\Report\STR030_StockTaking %28Before remove packing%29.xls" />
+    <None Include="Resources\FIND_TEXT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOWN_BTN.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms\3_Inventory\INV030 TAG Card Printing\TAGCardSchema.xsc">
+      <DependentUpon>TAGCardSchema.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\3_Inventory\INV030 TAG Card Printing\TAGCardSchema.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TAGCardSchema.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forms\3_Inventory\INV030 TAG Card Printing\TAGCardSchema.xss">
+      <DependentUpon>TAGCardSchema.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\UP_BTN.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Forms\5_Reports\RPT010Schema.xsc">
+      <DependentUpon>RPT010Schema.xsd</DependentUpon>
+    </None>
+    <None Include="Forms\5_Reports\RPT010Schema.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RPT010Schema.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Forms\5_Reports\RPT010Schema.xss">
+      <DependentUpon>RPT010Schema.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSet\STR010_StockCheckingList.xsc">
+      <DependentUpon>STR010_StockCheckingList.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSet\STR010_StockCheckingList.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>STR010_StockCheckingList.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\DataSet\STR010_StockCheckingList.xss">
+      <DependentUpon>STR010_StockCheckingList.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSet\STR020_StockCountingResult.xsc">
+      <DependentUpon>STR020_StockCountingResult.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSet\STR020_StockCountingResult.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>STR020_StockCountingResult.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Reports\DataSet\STR020_StockCountingResult.xss">
+      <DependentUpon>STR020_StockCountingResult.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\Report\EPR010_SummaryTransaction.xls" />
+    <None Include="Resources\CANCEL_ICON.png" />
+    <None Include="Resources\Clipper System_1 Floppy Disk.png" />
+    <None Include="Resources\ADD_ICON.png" />
+    <None Include="Resources\CLOSE.png" />
+    <Content Include="Resources\ADD_TO_LIST.png" />
+    <Content Include="Resources\bar-circle.gif" />
+    <Content Include="Resources\CLEAR.png" />
+    <Content Include="Resources\DOCUMENT_NEW.png" />
+    <None Include="Resources\ERROR.png" />
+    <Content Include="Resources\EXPORT.png" />
+    <None Include="Resources\MENU_IMAGE_COLLAPSE_STATE.png" />
+    <Content Include="Resources\FIND_BTN.ico" />
+    <Content Include="Resources\GO_BTN.ico" />
+    <Content Include="Resources\PRINT.png" />
+    <None Include="Resources\process.png" />
+    <Content Include="Resources\REFRESH.png" />
+    <None Include="Resources\run.png" />
+    <Content Include="Resources\SAVE.png" />
+    <None Include="Resources\TKP-INV1-ICON.ico" />
+    <Content Include="Resources\VIEW.png" />
+    <Content Include="Resources\WINDOWS_VIEW.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Forms\99_Template\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>rem ไม่ได้ใช้แล้ว
+rem IF NOT EXIST "$(SolutionDir)StarterKit\$(OutDir)Plugins" ( MD "$(SolutionDir)StarterKit\$(OutDir)Plugins"  )
+rem COPY "$(TargetPath)" "$(SolutionDir)StarterKit\$(OutDir)Plugins"
+rem COPY "$(TargetPath)" "$(SolutionDir)StarterKit\StarterKit\StarterKit\$(OutDir)"
+IF NOT EXIST "$(SolutionDir)StarterKit\StarterKit\StarterKit\$(OutDir)Report" ( MD "$(SolutionDir)StarterKit\StarterKit\StarterKit\$(OutDir)Report\"  )
+COPY "$(ProjectDir)Reports\Report\STR030_StockTaking.xls" "$(SolutionDir)StarterKit\StarterKit\StarterKit\$(OutDir)Report"
+COPY "$(ProjectDir)Reports\Report\STK060_ImportStockTakingTemplate.xls" "$(SolutionDir)StarterKit\StarterKit\StarterKit\$(OutDir)Report"
+COPY "$(ProjectDir)Reports\Report\TRN090_Invoice_Template.xls" "$(SolutionDir)StarterKit\StarterKit\StarterKit\$(OutDir)Report"
+COPY "$(ProjectDir)Reports\Report\STR040_StockTakingTagSummary.rpt" "$(SolutionDir)StarterKit\StarterKit\StarterKit\$(OutDir)Report"
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="STR020_StockCountingResult" targetNamespace="http://tempuri.org/STR020_StockCountingResult.xsd" xmlns:mstns="http://tempuri.org/STR020_StockCountingResult.xsd" xmlns="http://tempuri.org/STR020_StockCountingResult.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=.;Initial Catalog=TKP-INV2;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="invalid.TKP-INV2.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="STR020_StockCountingResult" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="STR020_StockCountingResult" msprop:Generator_DataSetName="STR020_StockCountingResult" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="S_STR020_StockCountingResult" msprop:Generator_UserTableName="S_STR020_StockCountingResult" msprop:Generator_RowDeletedName="S_STR020_StockCountingResultRowDeleted" msprop:Generator_RowChangedName="S_STR020_StockCountingResultRowChanged" msprop:Generator_RowClassName="S_STR020_StockCountingResultRow" msprop:Generator_RowChangingName="S_STR020_StockCountingResultRowChanging" msprop:Generator_RowEvArgName="S_STR020_StockCountingResultRowChangeEvent" msprop:Generator_RowEvHandlerName="S_STR020_StockCountingResultRowChangeEventHandler" msprop:Generator_TableClassName="S_STR020_StockCountingResultDataTable" msprop:Generator_TableVarName="tableS_STR020_StockCountingResult" msprop:Generator_RowDeletingName="S_STR020_StockCountingResultRowDeleting" msprop:Generator_TablePropName="S_STR020_StockCountingResult">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COUNTING_ID" msprop:Generator_UserColumnName="COUNTING_ID" msprop:Generator_ColumnVarNameInTable="columnCOUNTING_ID" msprop:Generator_ColumnPropNameInRow="COUNTING_ID" msprop:Generator_ColumnPropNameInTable="COUNTING_IDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ITEM_CD" msprop:Generator_UserColumnName="ITEM_CD" msprop:Generator_ColumnVarNameInTable="columnITEM_CD" msprop:Generator_ColumnPropNameInRow="ITEM_CD" msprop:Generator_ColumnPropNameInTable="ITEM_CDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="35" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOC_CD" msprop:Generator_UserColumnName="LOC_CD" msprop:Generator_ColumnVarNameInTable="columnLOC_CD" msprop:Generator_ColumnPropNameInRow="LOC_CD" msprop:Generator_ColumnPropNameInTable="LOC_CDColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOT_NO" msprop:Generator_UserColumnName="LOT_NO" msprop:Generator_ColumnVarNameInTable="columnLOT_NO" msprop:Generator_ColumnPropNameInRow="LOT_NO" msprop:Generator_ColumnPropNameInTable="LOT_NOColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SYSTEM_QTY" msprop:Generator_UserColumnName="SYSTEM_QTY" msprop:Generator_ColumnVarNameInTable="columnSYSTEM_QTY" msprop:Generator_ColumnPropNameInRow="SYSTEM_QTY" msprop:Generator_ColumnPropNameInTable="SYSTEM_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COUNT_QTY" msprop:Generator_UserColumnName="COUNT_QTY" msprop:Generator_ColumnVarNameInTable="columnCOUNT_QTY" msprop:Generator_ColumnPropNameInRow="COUNT_QTY" msprop:Generator_ColumnPropNameInTable="COUNT_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="DIFF_QTY" msdata:ReadOnly="true" msprop:Generator_UserColumnName="DIFF_QTY" msprop:Generator_ColumnVarNameInTable="columnDIFF_QTY" msprop:Generator_ColumnPropNameInRow="DIFF_QTY" msprop:Generator_ColumnPropNameInTable="DIFF_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ADJUSTED_FLAG" msprop:Generator_UserColumnName="ADJUSTED_FLAG" msprop:Generator_ColumnVarNameInTable="columnADJUSTED_FLAG" msprop:Generator_ColumnPropNameInRow="ADJUSTED_FLAG" msprop:Generator_ColumnPropNameInTable="ADJUSTED_FLAGColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="EFFECT_INVENTORY_FLAG" msprop:Generator_UserColumnName="EFFECT_INVENTORY_FLAG" msprop:Generator_ColumnVarNameInTable="columnEFFECT_INVENTORY_FLAG" msprop:Generator_ColumnPropNameInRow="EFFECT_INVENTORY_FLAG" msprop:Generator_ColumnPropNameInTable="EFFECT_INVENTORY_FLAGColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="REMARK" msprop:Generator_UserColumnName="REMARK" msprop:Generator_ColumnVarNameInTable="columnREMARK" msprop:Generator_ColumnPropNameInRow="REMARK" msprop:Generator_ColumnPropNameInTable="REMARKColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOC_DESC" msprop:Generator_UserColumnName="LOC_DESC" msprop:Generator_ColumnVarNameInTable="columnLOC_DESC" msprop:Generator_ColumnPropNameInRow="LOC_DESC" msprop:Generator_ColumnPropNameInTable="LOC_DESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM_DESC" msprop:Generator_UserColumnName="ITEM_DESC" msprop:Generator_ColumnVarNameInTable="columnITEM_DESC" msprop:Generator_ColumnPropNameInRow="ITEM_DESC" msprop:Generator_ColumnPropNameInTable="ITEM_DESCColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM_CLS" msprop:Generator_UserColumnName="ITEM_CLS" msprop:Generator_ColumnPropNameInRow="ITEM_CLS" msprop:Generator_ColumnVarNameInTable="columnITEM_CLS" msprop:Generator_ColumnPropNameInTable="ITEM_CLSColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_CLS_MINOR" msprop:Generator_UserColumnName="ITEM_CLS_MINOR" msprop:Generator_ColumnPropNameInRow="ITEM_CLS_MINOR" msprop:Generator_ColumnVarNameInTable="columnITEM_CLS_MINOR" msprop:Generator_ColumnPropNameInTable="ITEM_CLS_MINORColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_CLS_DESC" msprop:Generator_UserColumnName="ITEM_CLS_DESC" msprop:Generator_ColumnPropNameInRow="ITEM_CLS_DESC" msprop:Generator_ColumnVarNameInTable="columnITEM_CLS_DESC" msprop:Generator_ColumnPropNameInTable="ITEM_CLS_DESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_CLS_MINOR_DESC" msprop:Generator_UserColumnName="ITEM_CLS_MINOR_DESC" msprop:Generator_ColumnPropNameInRow="ITEM_CLS_MINOR_DESC" msprop:Generator_ColumnVarNameInTable="columnITEM_CLS_MINOR_DESC" msprop:Generator_ColumnPropNameInTable="ITEM_CLS_MINOR_DESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="FOR_CUSTOMER" msprop:Generator_UserColumnName="FOR_CUSTOMER" msprop:Generator_ColumnPropNameInRow="FOR_CUSTOMER" msprop:Generator_ColumnVarNameInTable="columnFOR_CUSTOMER" msprop:Generator_ColumnPropNameInTable="FOR_CUSTOMERColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

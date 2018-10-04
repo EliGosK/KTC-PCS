@@ -1,0 +1,849 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FF7FCFC-8EA2-4A7F-AAD6-11E27B24E6CE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SystemMaintenance</RootNamespace>
+    <AssemblyName>SystemMaintenance</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ApplicationIcon>GearIcon.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\SystemMaintenance.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\SystemMaintenance.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarPoint.CalcEngine, Version=2.5.2025.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=2.5.2025.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=2.5.2015.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=2.5.2015.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Ink, Version=2.5.2001.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=2.5.2015.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread.Design, Version=2.5.2015.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.TextRenderer, Version=2.5.2001.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\StarterKit\Library\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="policy.2.5.FarPoint.Win, Version=2.5.2015.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="policy.2.5.FarPoint.Win.Spread, Version=2.5.2015.2005, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\FavoriteButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\FavoriteButton.Designer.cs">
+      <DependentUpon>FavoriteButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\MenuControl\DrawingState.cs" />
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\MenuControl\MenuBar.cs" />
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\MenuControl\MenuBar.Drawing.cs" />
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\MenuControl\MenuBarAppearance.cs" />
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\MenuControl\MenuItem.cs" />
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\MenuControl\MenuItem.Drawing.cs" />
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\MenuControl\MenuItemAppearance.cs" />
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\MenuControl\MenuTree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\MenuControl\MenuTree.Designer.cs">
+      <DependentUpon>MenuTree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\MenuControl\MenuTree.Drawing.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\MenuControl\MenuTree.Events.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\MenuFrameWorkflow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\MenuFrameWorkflow.designer.cs">
+      <DependentUpon>MenuFrameWorkflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM001_Menu\ScreenFavoriteData.cs" />
+    <Compile Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0035_UserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0035_UserProfile.Designer.cs">
+      <DependentUpon>SFM0035_UserProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0033_GroupProperty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0033_GroupProperty.Designer.cs">
+      <DependentUpon>SFM0033_GroupProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0034_CreateGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0034_CreateGroup.Designer.cs">
+      <DependentUpon>SFM0034_CreateGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0032_UserList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0032_UserList.Designer.cs">
+      <DependentUpon>SFM0032_UserList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM004_ImportScreen\SFM004_ImportScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM004_ImportScreen\SFM004_ImportScreen.Designer.cs">
+      <DependentUpon>SFM004_ImportScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM006_AuthorizedMaintenance\SFM006_AuthorizedMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM006_AuthorizedMaintenance\SFM006_AuthorizedMaintenance.Designer.cs">
+      <DependentUpon>SFM006_AuthorizedMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM007_ScreenDetailMaintenance\ImageList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM007_ScreenDetailMaintenance\ImageList.Designer.cs">
+      <DependentUpon>ImageList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM007_ScreenDetailMaintenance\SFM007_ScreenDetailMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM007_ScreenDetailMaintenance\SFM007_ScreenDetailMaintenance.Designer.cs">
+      <DependentUpon>SFM007_ScreenDetailMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM008_SubMenuMaintenance\SFM0082_EditSubMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM008_SubMenuMaintenance\SFM0082_EditSubMenu.Designer.cs">
+      <DependentUpon>SFM0082_EditSubMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM008_SubMenuMaintenance\SFM0081_AddSubMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM008_SubMenuMaintenance\SFM0081_AddSubMenu.Designer.cs">
+      <DependentUpon>SFM0081_AddSubMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM008_SubMenuMaintenance\SFM008_SubMenuMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM008_SubMenuMaintenance\SFM008_SubMenuMaintenance.Designer.cs">
+      <DependentUpon>SFM008_SubMenuMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM009_MenuSetMaintenance\SFM0091_AddMenuSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM009_MenuSetMaintenance\SFM0091_AddMenuSet.Designer.cs">
+      <DependentUpon>SFM0091_AddMenuSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM009_MenuSetMaintenance\SFM0092_RegistSubMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM009_MenuSetMaintenance\SFM0092_RegistSubMenu.Designer.cs">
+      <DependentUpon>SFM0092_RegistSubMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM009_MenuSetMaintenance\SFM009_MenuSetMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM009_MenuSetMaintenance\SFM009_MenuSetMaintenance.Designer.cs">
+      <DependentUpon>SFM009_MenuSetMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM010_MenuRegister\SFM010_MenuRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM010_MenuRegister\SFM010_MenuRegister.Designer.cs">
+      <DependentUpon>SFM010_MenuRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM010_MenuRegister\SFM0101_ScreenList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM010_MenuRegister\SFM0101_ScreenList.Designer.cs">
+      <DependentUpon>SFM0101_ScreenList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM011_ExportDialog\CSVFile.cs" />
+    <Compile Include="1_UserInterface\11_Forms\SFM011_ExportDialog\ExcelControl.cs" />
+    <Compile Include="1_UserInterface\11_Forms\SFM011_ExportDialog\ExportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM011_ExportDialog\ExportDialog.Designer.cs">
+      <DependentUpon>ExportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM999_TestForm\SFM999_TestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM999_TestForm\SFM999_TestForm.Designer.cs">
+      <DependentUpon>SFM999_TestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\12_UserControls\PanelScreenPane.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\13_Common\DataDefine.cs" />
+    <Compile Include="1_UserInterface\14_BaseForms\CustomizeBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\14_BaseForms\CustomizeBaseForm.Designer.cs">
+      <DependentUpon>CustomizeBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\14_BaseForms\CustomizeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\14_BaseForms\CustomizeForm.Designer.cs">
+      <DependentUpon>CustomizeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\14_BaseForms\CustomizeInquiryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\14_BaseForms\CustomizeInquiryForm.Designer.cs">
+      <DependentUpon>CustomizeInquiryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\14_BaseForms\CustomizeListPaneBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\14_BaseForms\CustomizeListPaneBaseForm.Designer.cs">
+      <DependentUpon>CustomizeListPaneBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\14_BaseForms\CustomizeListPaneForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\14_BaseForms\CustomizeListPaneForm.Designer.cs">
+      <DependentUpon>CustomizeListPaneForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\14_BaseForms\ErrorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\14_BaseForms\ErrorDialog.Designer.cs">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="2_UserInterfaceComponent\21_UIDataModel\AuthorizedMaintenanceUIDM.cs" />
+    <Compile Include="2_UserInterfaceComponent\21_UIDataModel\MenuRegisterUIDM.cs" />
+    <Compile Include="2_UserInterfaceComponent\21_UIDataModel\MenuSetMaintenanceUIDM.cs" />
+    <Compile Include="2_UserInterfaceComponent\21_UIDataModel\ScreenDetailMaintenanceUIDM.cs" />
+    <Compile Include="2_UserInterfaceComponent\21_UIDataModel\SubMenuMaintenanceUIDM.cs" />
+    <Compile Include="2_UserInterfaceComponent\21_UIDataModel\UserProfileUIDM.cs" />
+    <Compile Include="2_UserInterfaceComponent\22_Controller\AuthorizedMaintenanceController.cs" />
+    <Compile Include="2_UserInterfaceComponent\22_Controller\MenuController.cs" />
+    <Compile Include="2_UserInterfaceComponent\22_Controller\MenuRegisterController.cs" />
+    <Compile Include="2_UserInterfaceComponent\22_Controller\MenuSetMaintenanceController.cs" />
+    <Compile Include="2_UserInterfaceComponent\22_Controller\ScreenDetailMaintenanceController.cs" />
+    <Compile Include="2_UserInterfaceComponent\22_Controller\ScreenImportController.cs" />
+    <Compile Include="2_UserInterfaceComponent\21_UIDataModel\MenuUIDM.cs" />
+    <Compile Include="2_UserInterfaceComponent\21_UIDataModel\ScreenImportUIDM.cs" />
+    <Compile Include="1_UserInterface\13_Common\BusinessAssemblyCache.cs" />
+    <Compile Include="1_UserInterface\13_Common\DatabaseScreenCache.cs" />
+    <Compile Include="1_UserInterface\13_Common\ImageCache.cs" />
+    <Compile Include="1_UserInterface\13_Common\InternalScreenCache.cs" />
+    <Compile Include="1_UserInterface\13_Common\ProgramScreenCache.cs" />
+    <Compile Include="2_UserInterfaceComponent\22_Controller\SubMenuMaintenanceController.cs" />
+    <Compile Include="2_UserInterfaceComponent\22_Controller\UserProfileController.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\AuthorizedMaintenanceBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\ClassListBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\ImportScreenBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\MenuBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\MenuRegisterBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\MenuSetMaintenanceBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\MenuSubItemBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\MenuSubMaintenanceBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\RunningNumberBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\ScreenBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\ScreenDetailBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\ScreenDetailLangBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\ScreenDetailMaintenanceBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\LangBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\ScreenLangBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\UserBIZ.cs" />
+    <Compile Include="3_BusinessLayer\31_BIZ\UserGroupBIZ.cs" />
+    <Compile Include="3_BusinessLayer\32_Validators\MenuFrameValidator.cs" />
+    <Compile Include="3_BusinessLayer\32_Validators\MenuSetMaintenanceValidator.cs" />
+    <Compile Include="3_BusinessLayer\32_Validators\MenuSubValidator.cs" />
+    <Compile Include="3_BusinessLayer\32_Validators\ScreenImportValidator.cs" />
+    <Compile Include="3_BusinessLayer\32_Validators\UserGroupValidator.cs" />
+    <Compile Include="3_BusinessLayer\32_Validators\UserProfileValidator.cs" />
+    <Compile Include="4_DataAccessLayer\DAOClassList.cs" />
+    <Compile Include="4_DataAccessLayer\DAOFactory.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IClassListDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IGroupScreenPermissionDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IImageDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\ILangDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IMenuDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IMenuFavoriteDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IMenuSetDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IMenuSetDetailDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IMenuSubDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IMenuSubItemDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IMenuSubLangDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IRunningNumber_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\ITransactionLock_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IRunningNumber.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IClassListDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IGroupScreenPermissionDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IImageDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\ILangDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IMenuFavoriteDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IMenuSetDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IMenuSetDetailDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IMenuSubDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IMenuSubItemDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IMenuSubLangDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IMessageDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IScreenDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IScreenDetailDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IScreenDetailLangDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IScreenLangDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\ITransactionLock.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IUserDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IUserGroupDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\Original\IUserScreenPermissionDAO.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IScreenDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IScreenDetailDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IScreenDetailLangDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IScreenLangDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IUserDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IUserGroupDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\InterfaceDAO\IUserScreenPermissionDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\ClassListDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\GroupScreenPermissionDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\ImageDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\LangDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\MenuDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\MenuFavoriteDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\MenuSetDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\MenuSetDetailDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\MenuSubDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\MenuSubItemDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\MenuSubLangDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\ClassListDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\GroupScreenPermissionDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\ImageDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\LangDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\MenuFavoriteDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\MenuSetDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\MenuSetDetailDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\MenuSubDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\MenuSubItemDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\MenuSubLangDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\MessageDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\ScreenDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\ScreenDetailDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\ScreenDetailLangDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\ScreenLangDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\TransactionLockDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\UserScreenPermissionDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\ScreenDetailLangDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\UserDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\Original\UserGroupDAO.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\ScreenDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\ScreenDetailDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\ScreenLangDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\UserDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\UserGroupDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\Oracle\41_DAO\UserScreenPermissionDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\ClassListDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\GroupScreenPermissionDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\ImageDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\LangDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\MenuDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\MenuFavoriteDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\MenuSetDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\MenuSetDetailDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\MenuSubDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\MenuSubItemDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\MenuSubLangDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\ClassListDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\GroupScreenPermissionDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\ImageDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\LangDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\MenuFavoriteDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\MenuSetDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\MenuSetDetailDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\MenuSubDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\MenuSubItemDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\MenuSubLangDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\MessageDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\RunningNumberDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\ScreenDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\ScreenDetailDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\ScreenDetailLangDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\ScreenLangDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\TransactionLockDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\UserDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\UserGroupDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\Original\UserScreenPermissionDAO.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\RunningNumberDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\ScreenDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\ScreenDetailDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\ScreenDetailLangDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\ScreenLangDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\TransactionLockDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\UserDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\UserGroupDAO_Add.cs" />
+    <Compile Include="4_DataAccessLayer\SQLServer\41_DAO\UserScreenPermissionDAO_Add.cs" />
+    <Compile Include="5_DataTransferObject\ClassListDTO.cs" />
+    <Compile Include="5_DataTransferObject\GroupScreenPermissionDTO.cs" />
+    <Compile Include="5_DataTransferObject\ImageDTO.cs" />
+    <Compile Include="5_DataTransferObject\LangDTO.cs" />
+    <Compile Include="5_DataTransferObject\MenuFavoriteDTO.cs" />
+    <Compile Include="5_DataTransferObject\MenuSetDetailDTO.cs" />
+    <Compile Include="5_DataTransferObject\MenuSetDTO.cs" />
+    <Compile Include="5_DataTransferObject\MenuSubDTO.cs" />
+    <Compile Include="5_DataTransferObject\MenuSubItemDTO.cs" />
+    <Compile Include="5_DataTransferObject\MenuSubLangDTO.cs" />
+    <Compile Include="5_DataTransferObject\RunningNumberDTO.cs" />
+    <Compile Include="5_DataTransferObject\ScreenDetailDTO.cs" />
+    <Compile Include="5_DataTransferObject\ScreenDetailLangDTO.cs" />
+    <Compile Include="5_DataTransferObject\ScreenDTO.cs" />
+    <Compile Include="5_DataTransferObject\ScreenLangDTO.cs" />
+    <Compile Include="5_DataTransferObject\TransactionLockDTO.cs" />
+    <Compile Include="5_DataTransferObject\UserScreenPermissionDTO.cs" />
+    <Compile Include="5_DataTransferObject\VENDOR_CUSTOMER_TAB_DTO.cs" />
+    <Compile Include="3_BusinessLayer\32_Validators\UserValidator.cs" />
+    <Compile Include="2_UserInterfaceComponent\22_Controller\UserMaintenanceController.cs" />
+    <Compile Include="96_AdvanceSearch\ADS010_AdvanceSearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="96_AdvanceSearch\ADS010_AdvanceSearchDialog.designer.cs">
+      <DependentUpon>ADS010_AdvanceSearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="98_MultiColumnSorting\MCS010_MultiColumnSorting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="98_MultiColumnSorting\MCS010_MultiColumnSorting.designer.cs">
+      <DependentUpon>MCS010_MultiColumnSorting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="99_WorkflowDiagram\Color\HSBColor.cs" />
+    <Compile Include="99_WorkflowDiagram\DAO\ButtonDAO.cs" />
+    <Compile Include="99_WorkflowDiagram\DAO\ConnectorDAO.cs" />
+    <Compile Include="99_WorkflowDiagram\DAO\LineDetailDAO.cs" />
+    <Compile Include="99_WorkflowDiagram\DAO\LineHeaderDAO.cs" />
+    <Compile Include="99_WorkflowDiagram\DTO\ButtonDTO.cs" />
+    <Compile Include="99_WorkflowDiagram\DTO\ConnectorDTO.cs" />
+    <Compile Include="99_WorkflowDiagram\DTO\LineDetailDTO.cs" />
+    <Compile Include="99_WorkflowDiagram\DTO\LineHeaderDTO.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowConstant\WorkflowColumnType.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowConstant\WorkflowLineDirection.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowConstant\WorkflowLineStatus.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\Cell.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\Engine\LineImage.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\Engine\WorkflowEngine.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\Engine\WorkflowEngine.Drawing.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\Workflow.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\Workflow.Designer.cs">
+      <DependentUpon>Workflow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowButton.Designer.cs">
+      <DependentUpon>WorkflowButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowButtonAppearance.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowButtonArgs.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowButtonList.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowColumnStyle.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowDocument.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowLine.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowLineHeaderList.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowPanel.Designer.cs">
+      <DependentUpon>WorkflowPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowRowStyle.cs" />
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="99_WorkflowDiagram\WorkflowDiagram\WorkflowViewer.Designer.cs">
+      <DependentUpon>WorkflowViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBMessageLoader.cs" />
+    <Compile Include="5_DataTransferObject\MessageDTO.cs" />
+    <Compile Include="5_DataTransferObject\UserDTO.cs" />
+    <Compile Include="5_DataTransferObject\UserGroupDTO.cs" />
+    <Compile Include="2_UserInterfaceComponent\22_Controller\ConfigurationController.cs" />
+    <Compile Include="2_UserInterfaceComponent\22_Controller\UserController.cs" />
+    <Compile Include="2_UserInterfaceComponent\21_UIDataModel\UserMaintenanceUIDM.cs" />
+    <Compile Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0031_CreateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0031_CreateUser.Designer.cs">
+      <DependentUpon>SFM0031_CreateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM003_UserMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM003_UserMaintenance.Designer.cs">
+      <DependentUpon>SFM003_UserMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM005_SettingConfiguration\FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM005_SettingConfiguration\FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InternalVariable.cs" />
+    <Compile Include="Messages.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceMessageLoader.cs" />
+    <Compile Include="1_UserInterface\11_Forms\SFM002_Login\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1_UserInterface\11_Forms\SFM002_Login\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CommonLib\CommonLib.csproj">
+      <Project>{D160F5CE-2341-444F-B82E-B429120B6738}</Project>
+      <Name>CommonLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EVOFramework.Windows.Form\EVOFramework.Windows.Forms.csproj">
+      <Project>{61AA9F8C-A5B2-4646-AB98-7ED46981D68E}</Project>
+      <Name>EVOFramework.Windows.Forms</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+    <ProjectReference Include="..\EVOFramework\EVOFramework.csproj">
+      <Project>{C6BDCF3A-CBCF-49F0-BA6B-1F5639A959CF}</Project>
+      <Name>EVOFramework</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM001_Menu\MenuFrameWorkflow.resx">
+      <DependentUpon>MenuFrameWorkflow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM002_Login\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0035_UserProfile.resx">
+      <DependentUpon>SFM0035_UserProfile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0031_CreateUser.resx">
+      <DependentUpon>SFM0031_CreateUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0032_UserList.resx">
+      <DependentUpon>SFM0032_UserList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0033_GroupProperty.resx">
+      <DependentUpon>SFM0033_GroupProperty.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM0034_CreateGroup.resx">
+      <DependentUpon>SFM0034_CreateGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM003_UserMaintenance\SFM003_UserMaintenance.resx">
+      <DependentUpon>SFM003_UserMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM004_ImportScreen\SFM004_ImportScreen.resx">
+      <DependentUpon>SFM004_ImportScreen.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM005_SettingConfiguration\FormSetting.resx">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM006_AuthorizedMaintenance\SFM006_AuthorizedMaintenance.resx">
+      <DependentUpon>SFM006_AuthorizedMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM007_ScreenDetailMaintenance\ImageList.resx">
+      <DependentUpon>ImageList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM007_ScreenDetailMaintenance\SFM007_ScreenDetailMaintenance.resx">
+      <DependentUpon>SFM007_ScreenDetailMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM008_SubMenuMaintenance\SFM0082_EditSubMenu.resx">
+      <DependentUpon>SFM0082_EditSubMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM008_SubMenuMaintenance\SFM0081_AddSubMenu.resx">
+      <DependentUpon>SFM0081_AddSubMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM008_SubMenuMaintenance\SFM008_SubMenuMaintenance.resx">
+      <DependentUpon>SFM008_SubMenuMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM009_MenuSetMaintenance\SFM0091_AddMenuSet.resx">
+      <DependentUpon>SFM0091_AddMenuSet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM009_MenuSetMaintenance\SFM0092_RegistSubMenu.resx">
+      <DependentUpon>SFM0092_RegistSubMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM009_MenuSetMaintenance\SFM009_MenuSetMaintenance.resx">
+      <DependentUpon>SFM009_MenuSetMaintenance.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM010_MenuRegister\SFM010_MenuRegister.resx">
+      <DependentUpon>SFM010_MenuRegister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM010_MenuRegister\SFM0101_ScreenList.resx">
+      <DependentUpon>SFM0101_ScreenList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM011_ExportDialog\ExportDialog.resx">
+      <DependentUpon>ExportDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\11_Forms\SFM999_TestForm\SFM999_TestForm.resx">
+      <DependentUpon>SFM999_TestForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\14_BaseForms\CustomizeBaseForm.resx">
+      <DependentUpon>CustomizeBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\14_BaseForms\CustomizeForm.resx">
+      <DependentUpon>CustomizeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\14_BaseForms\CustomizeInquiryForm.resx">
+      <DependentUpon>CustomizeInquiryForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\14_BaseForms\CustomizeListPaneBaseForm.resx">
+      <DependentUpon>CustomizeListPaneBaseForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\14_BaseForms\CustomizeListPaneForm.resx">
+      <DependentUpon>CustomizeListPaneForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="1_UserInterface\14_BaseForms\ErrorDialog.resx">
+      <DependentUpon>ErrorDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="96_AdvanceSearch\ADS010_AdvanceSearchDialog.resx">
+      <DependentUpon>ADS010_AdvanceSearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="98_MultiColumnSorting\MCS010_MultiColumnSorting.resx">
+      <DependentUpon>MCS010_MultiColumnSorting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MENU_BAR_VLINE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MENU_HEADER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MENU_HEADER_HLINE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MENU_IMAGE_COLLAPSE_STATE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MENU_IMAGE_EXPAND_STATE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCREEN_HEADER01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCREEN_HEADER02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCREEN_HEADER03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SCREEN_HEADER04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GROUP_USER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\img_not_found.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UP_BTN.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DOWN_BTN.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEW_USER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELETE_USER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NEW_GROUP_USER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELETE_GROUP_USER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MENU_BACKGROUND.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ERROR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GearIcon.ico" />
+    <Content Include="Resources\checked.PNG" />
+    <None Include="Resources\LOG_OFF.gif" />
+    <Content Include="Resources\FIND_BTN.ico" />
+    <Content Include="Resources\Rubik.ico" />
+    <Content Include="Resources\unchecked.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="5_DataTransferObject\View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

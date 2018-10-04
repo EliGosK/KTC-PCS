@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SystemMaintenance.Domain.ScreenImportDomain">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAQAAACAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>1_PresentationLayer\13_Domain\ScreenImportDomain.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SystemMaintenance.Controller.ScreenImportController">
+    <Position X="4.25" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAABAAAAAAAAAIABAAAAAAA=</HashCode>
+      <FileName>1_PresentationLayer\12_Controller\ScreenImportController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SystemMaintenance.BIZ.ScreenImportBIZ">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAIAAgAAAAAA=</HashCode>
+      <FileName>2_BusinessLayer\21_BIZ\ScreenImportBIZ.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SystemMaintenance.Oracle.DAO.ScreenDAO_Add">
+    <Position X="2" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAABIA=</HashCode>
+      <FileName>3_DataAccessLayer\31_DAO\ScreenDAO_Add.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SystemMaintenance.Oracle.DAO.ScreenDetailDAO_Add">
+    <Position X="4.25" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAIAAAAAAAAAAAAAEAAAAEAAAAAAAAAAE=</HashCode>
+      <FileName>3_DataAccessLayer\31_DAO\ScreenDetailDAO_Add.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SystemMaintenance._3_DataAccessLayer._31_DAO.Original.ScreenDetailLangDAO_Add">
+    <Position X="2" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAIAAAAAAAAAAAAAEAAAAEAAAAAAAAAAE=</HashCode>
+      <FileName>3_DataAccessLayer\31_DAO\ScreenDetailLangDAO_Add.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

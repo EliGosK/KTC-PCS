@@ -1,0 +1,9 @@
+D:\KTC-PCS Code\StarterKit\StarterKit\EVOFramework\bin\Release\EVOFramework.dll
+D:\KTC-PCS Code\StarterKit\StarterKit\EVOFramework\bin\Release\EVOFramework.pdb
+D:\KTC-PCS Code\StarterKit\StarterKit\EVOFramework\bin\Release\System.Data.dll
+D:\KTC-PCS Code\StarterKit\StarterKit\EVOFramework\bin\Release\System.Data.OracleClient.dll
+D:\KTC-PCS Code\StarterKit\StarterKit\EVOFramework\bin\Release\System.dll
+D:\KTC-PCS Code\StarterKit\StarterKit\EVOFramework\bin\Release\System.Drawing.dll
+D:\KTC-PCS Code\StarterKit\StarterKit\EVOFramework\bin\Release\System.Xml.dll
+D:\KTC-PCS Code\StarterKit\StarterKit\EVOFramework\obj\Release\EVOFramework.dll
+D:\KTC-PCS Code\StarterKit\StarterKit\EVOFramework\obj\Release\EVOFramework.pdb

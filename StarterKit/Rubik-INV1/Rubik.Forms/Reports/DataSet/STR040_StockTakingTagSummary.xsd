@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="STR040_StockTakingTagSummary" targetNamespace="http://tempuri.org/STR040_StockTakingTagSummary.xsd" xmlns:mstns="http://tempuri.org/STR040_StockTakingTagSummary.xsd" xmlns="http://tempuri.org/STR040_StockTakingTagSummary.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection ConnectionStringObject="Data Source=fusionsvr2;Initial Catalog=KTC-PCS;Persist Security Info=True;User ID=sa" IsAppSettingsProperty="false" Modifier="Assembly" Name="fusionsvr2.KTC-PCS.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="STR040_StockTakingTagSummary" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="STR040_StockTakingTagSummary" msprop:Generator_UserDSName="STR040_StockTakingTagSummary">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="STR040_StockTakingTagSummary" msprop:Generator_TableClassName="STR040_StockTakingTagSummaryDataTable" msprop:Generator_TableVarName="tableSTR040_StockTakingTagSummary" msprop:Generator_TablePropName="_STR040_StockTakingTagSummary" msprop:Generator_RowDeletingName="STR040_StockTakingTagSummaryRowDeleting" msprop:Generator_UserTableName="STR040_StockTakingTagSummary" msprop:Generator_RowChangingName="STR040_StockTakingTagSummaryRowChanging" msprop:Generator_RowEvHandlerName="STR040_StockTakingTagSummaryRowChangeEventHandler" msprop:Generator_RowDeletedName="STR040_StockTakingTagSummaryRowDeleted" msprop:Generator_RowEvArgName="STR040_StockTakingTagSummaryRowChangeEvent" msprop:Generator_RowChangedName="STR040_StockTakingTagSummaryRowChanged" msprop:Generator_RowClassName="STR040_StockTakingTagSummaryRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STOCK_TAKING_DATE" msprop:Generator_ColumnVarNameInTable="columnSTOCK_TAKING_DATE" msprop:Generator_ColumnPropNameInRow="STOCK_TAKING_DATE" msprop:Generator_ColumnPropNameInTable="STOCK_TAKING_DATEColumn" msprop:Generator_UserColumnName="STOCK_TAKING_DATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="LOC_CD" msprop:Generator_ColumnVarNameInTable="columnLOC_CD" msprop:Generator_ColumnPropNameInRow="LOC_CD" msprop:Generator_ColumnPropNameInTable="LOC_CDColumn" msprop:Generator_UserColumnName="LOC_CD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ITEM_CD" msprop:Generator_ColumnVarNameInTable="columnITEM_CD" msprop:Generator_ColumnPropNameInRow="ITEM_CD" msprop:Generator_ColumnPropNameInTable="ITEM_CDColumn" msprop:Generator_UserColumnName="ITEM_CD" type="xs:int" minOccurs="0" />
+              <xs:element name="SHORT_NAME" msprop:Generator_ColumnVarNameInTable="columnSHORT_NAME" msprop:Generator_ColumnPropNameInRow="SHORT_NAME" msprop:Generator_ColumnPropNameInTable="SHORT_NAMEColumn" msprop:Generator_UserColumnName="SHORT_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="TAG_NO" msprop:Generator_ColumnVarNameInTable="columnTAG_NO" msprop:Generator_ColumnPropNameInRow="TAG_NO" msprop:Generator_ColumnPropNameInTable="TAG_NOColumn" msprop:Generator_UserColumnName="TAG_NO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOT_NO" msprop:Generator_ColumnVarNameInTable="columnLOT_NO" msprop:Generator_ColumnPropNameInRow="LOT_NO" msprop:Generator_ColumnPropNameInTable="LOT_NOColumn" msprop:Generator_UserColumnName="LOT_NO">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LOT_SIZE" msprop:Generator_ColumnVarNameInTable="columnLOT_SIZE" msprop:Generator_ColumnPropNameInRow="LOT_SIZE" msprop:Generator_ColumnPropNameInTable="LOT_SIZEColumn" msprop:Generator_UserColumnName="LOT_SIZE" type="xs:decimal" minOccurs="0" />
+              <xs:element name="COUNT_BOX" msprop:Generator_ColumnVarNameInTable="columnCOUNT_BOX" msprop:Generator_ColumnPropNameInRow="COUNT_BOX" msprop:Generator_ColumnPropNameInTable="COUNT_BOXColumn" msprop:Generator_UserColumnName="COUNT_BOX" type="xs:int" minOccurs="0" />
+              <xs:element name="SYSTEM_QTY" msprop:Generator_ColumnVarNameInTable="columnSYSTEM_QTY" msprop:Generator_ColumnPropNameInRow="SYSTEM_QTY" msprop:Generator_ColumnPropNameInTable="SYSTEM_QTYColumn" msprop:Generator_UserColumnName="SYSTEM_QTY" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PACK_NO" msprop:Generator_ColumnVarNameInTable="columnPACK_NO" msprop:Generator_ColumnPropNameInRow="PACK_NO" msprop:Generator_ColumnPropNameInTable="PACK_NOColumn" msprop:Generator_UserColumnName="PACK_NO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="21" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

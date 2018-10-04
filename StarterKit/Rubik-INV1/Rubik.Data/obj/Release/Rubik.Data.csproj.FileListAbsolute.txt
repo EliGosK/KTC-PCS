@@ -1,0 +1,7 @@
+D:\KTC-PCS Code\StarterKit\Rubik-INV1\Rubik.Data\bin\Release\Rubik.Data.dll
+D:\KTC-PCS Code\StarterKit\Rubik-INV1\Rubik.Data\bin\Release\Rubik.Data.pdb
+D:\KTC-PCS Code\StarterKit\Rubik-INV1\Rubik.Data\bin\Release\EVOFramework.dll
+D:\KTC-PCS Code\StarterKit\Rubik-INV1\Rubik.Data\bin\Release\EVOFramework.pdb
+D:\KTC-PCS Code\StarterKit\Rubik-INV1\Rubik.Data\obj\Release\Rubik.Data.csprojResolveAssemblyReference.cache
+D:\KTC-PCS Code\StarterKit\Rubik-INV1\Rubik.Data\obj\Release\Rubik.Data.dll
+D:\KTC-PCS Code\StarterKit\Rubik-INV1\Rubik.Data\obj\Release\Rubik.Data.pdb

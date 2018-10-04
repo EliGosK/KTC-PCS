@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RPT010Schema" targetNamespace="http://tempuri.org/RPT010Schema.xsd" xmlns:mstns="http://tempuri.org/RPT010Schema.xsd" xmlns="http://tempuri.org/RPT010Schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RPT010Schema" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="RPT010Schema" msprop:Generator_DataSetName="RPT010Schema" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WK_RPT010" msprop:Generator_UserTableName="WK_RPT010" msprop:Generator_RowDeletedName="WK_RPT010RowDeleted" msprop:Generator_RowChangedName="WK_RPT010RowChanged" msprop:Generator_RowClassName="WK_RPT010Row" msprop:Generator_RowChangingName="WK_RPT010RowChanging" msprop:Generator_RowEvArgName="WK_RPT010RowChangeEvent" msprop:Generator_RowEvHandlerName="WK_RPT010RowChangeEventHandler" msprop:Generator_TableClassName="WK_RPT010DataTable" msprop:Generator_TableVarName="tableWK_RPT010" msprop:Generator_RowDeletingName="WK_RPT010RowDeleting" msprop:Generator_TablePropName="WK_RPT010">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ITEM_CD" msprop:Generator_UserColumnName="ITEM_CD" msprop:Generator_ColumnVarNameInTable="columnITEM_CD" msprop:Generator_ColumnPropNameInRow="ITEM_CD" msprop:Generator_ColumnPropNameInTable="ITEM_CDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ITEM_DESC" msprop:Generator_UserColumnName="ITEM_DESC" msprop:Generator_ColumnVarNameInTable="columnITEM_DESC" msprop:Generator_ColumnPropNameInRow="ITEM_DESC" msprop:Generator_ColumnPropNameInTable="ITEM_DESCColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RECYCLE_QTY" msprop:Generator_UserColumnName="RECYCLE_QTY" msprop:Generator_ColumnVarNameInTable="columnRECYCLE_QTY" msprop:Generator_ColumnPropNameInRow="RECYCLE_QTY" msprop:Generator_ColumnPropNameInTable="RECYCLE_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NORMAL_QTY" msprop:Generator_UserColumnName="NORMAL_QTY" msprop:Generator_ColumnVarNameInTable="columnNORMAL_QTY" msprop:Generator_ColumnPropNameInRow="NORMAL_QTY" msprop:Generator_ColumnPropNameInTable="NORMAL_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TOTAL_QTY" msprop:Generator_UserColumnName="TOTAL_QTY" msprop:Generator_ColumnVarNameInTable="columnTOTAL_QTY" msprop:Generator_ColumnPropNameInRow="TOTAL_QTY" msprop:Generator_ColumnPropNameInTable="TOTAL_QTYColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="WR_QTY" msprop:Generator_UserColumnName="WR_QTY" msprop:Generator_ColumnVarNameInTable="columnWR_QTY" msprop:Generator_ColumnPropNameInRow="WR_QTY" msprop:Generator_ColumnPropNameInTable="WR_QTYColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,110 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Root>
+    <Name>FormBGColor</Name>
+    <FontName>Tahoma</FontName>
+    <FontStyle>Regular</FontStyle>
+    <FontSize>12</FontSize>
+    <ForeColor>255,0,0,0</ForeColor>
+    <BackColor>AliceBlue</BackColor>
+  </Root>
+  <Root>
+    <!-- datagrid style on list screen 
+      set -> Fp.Spread.TextTipDelay  = 1000 to enable this theme
+    -->
+    <Name>ListDataGridStyle</Name>
+    <FontName>Tahoma</FontName>
+    <FontStyle>Regular</FontStyle>
+    <FontSize>10</FontSize>
+    <ForeColor>255,0,0,0</ForeColor>
+    <BackColor>AliceBlue</BackColor>
+  </Root>
+  <Root>
+    <Name>Title</Name>
+    <FontName>Tahoma</FontName>
+    <FontStyle>Bold,Italic</FontStyle>
+    <FontSize>20</FontSize>
+    <ForeColor>255,0,0,192</ForeColor>
+    <BackColor>AliceBlue</BackColor>
+  </Root>  
+  <Root>    
+    <Name>Header</Name>
+    <FontName>Tahoma</FontName>
+    <FontStyle>Regular</FontStyle>
+    <FontSize>14</FontSize>
+    <ForeColor>Navy</ForeColor>
+    <BackColor>AliceBlue</BackColor>
+  </Root>
+
+  <!--
+  ใช้กับการแสดงข้อความปกติ
+  -->
+  <Root>
+    <Name>NormalText</Name>
+    <FontName>Tahoma</FontName>
+    <FontStyle>Regular</FontStyle>
+    <FontSize>10</FontSize>
+    <ForeColor>255,0,0,0</ForeColor>
+    <BackColor>AliceBlue</BackColor>
+  </Root>
+
+  <!--
+  ใช้กับ Editor ที่สามารถพิมพ์ข้อความได้
+  -->
+  <Root>
+    <Name>DataEdit</Name>
+    <FontName>Tahoma</FontName>
+    <FontStyle>Regular</FontStyle>
+    <FontSize>10</FontSize>
+    <ForeColor>Black</ForeColor>
+    <BackColor>White</BackColor>
+  </Root>
+
+  <!--
+  ใช้กับ Editor เมื่อสถานะเป็น ReadOnly
+  -->
+  <Root>
+    <Name>DataReadOnly</Name>
+    <FontName>Tahoma</FontName>
+    <FontStyle>Regular</FontStyle>
+    <FontSize>10</FontSize>
+    <ForeColor>255,0,0,0</ForeColor>
+    <BackColor>255,236,247,243</BackColor>
+  </Root>
+
+  <!--
+  ใช้กับปุ่ม
+  -->
+  <Root>
+    <Name>Button</Name>
+    <FontName>Tahoma</FontName>
+    <FontStyle>Regular</FontStyle>
+    <FontSize>10</FontSize>
+    <ForeColor>Black</ForeColor>
+    <BackColor>Control</BackColor>
+  </Root>
+  
+  <!--
+  ใช้กับข้อความที่บอกว่า Field Require
+  -->
+  <Root>
+    <Name>RequireText</Name>
+    <FontName>Tahoma</FontName>
+    <FontStyle>Regular</FontStyle>
+    <FontSize>10</FontSize>
+    <ForeColor>Red</ForeColor>
+    <BackColor>AliceBlue</BackColor>
+  </Root>
+
+  <!--
+  ToolStrip
+  -->
+  <Root>
+    <Name>Too</Name>
+    <FontName>Tahoma</FontName>
+    <FontStyle>Regular</FontStyle>
+    <FontSize>10</FontSize>
+    <ForeColor>Red</ForeColor>
+    <BackColor>AliceBlue</BackColor>
+  </Root>
+</DocumentElement>
